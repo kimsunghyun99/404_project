@@ -4,6 +4,9 @@
 깃 연결 참고
 https://s-bug.tistory.com/42
 --------------------------------
+Repository 내 작업 폴더 연동
+https://velog.io/@zangsu/Github-Repository%EC%99%80-%EB%82%B4-%EC%9E%91%EC%97%85-%ED%8F%B4%EB%8D%94-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0
+--------------------------------
 <23.11.20>
 조이름 : 404
 조장 : 이영진
