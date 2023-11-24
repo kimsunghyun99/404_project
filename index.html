@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>안녕안녕</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./favicon/favicon-16x16.png">
+    <title>Somentum</title>
 </head>
 <body>
-    <h1>하이111111111111111111111111111111111111111111</h1>
-    <p>테스트 </p>
+    <form id="Login">
+        <input required maxlength="10" type="text" id="name" placeholder="당신의 이름을 적어주세요.">
+        <input type="submit" value="Login" />
+    </form>
+
+    <h1 id="h1" class="hidden"></h1>
+
+    <h2 id="clock">00:00:00</h2>
+
+    <div id="quote">
+        <span>명언</span><br>
+        <span>작가</span>
+    </div><br>
+
+    <div id="weather">
+        <span>날씨</span><br>
+        <span>온도</span><br>
+        <span>지역</span>
+    </div><br>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/quote.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/weather.js"></script>
+
 </body>
 </html>
