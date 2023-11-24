@@ -14,14 +14,19 @@ function success(position){
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${APIKey}`;
 
     fetch(url).then(response=>response.json()).then(data=>{
+        console.log(data);
         console.log(data.name, data.weather[0].description, data.main.temp);
 
         const weather = document.querySelector("#weather span:first-child");
         const temp = document.querySelector("#weather span:nth-child(3)");
         const city = document.querySelector("#weather span:last-child");
     
+        // 절대온도 : 섭씨 + 273.15 
+        const celsiusTemp = data.main.temp - 273.15;
+
         weather.innerText = data.weather[0].description;
-        temp.innerText = data.main.temp;
+        temp.innerText = `${celsiusTemp.toFixed(2)}°C`;
+        //temp.innerText = data.main.temp;
         city.innerText = data.name;
     })
 

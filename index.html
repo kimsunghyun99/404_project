@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" sizes="16x16"  href="./favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <title>Somentum</title>
 </head>
+
 <body>
-    <form id="Login">
-        <input required maxlength="10" type="text" id="name" placeholder="당신의 이름을 적어주세요.">
-        <input type="submit" value="Login" />
-    </form>
+    <div class="bodyContainer">
+        <form id="Login">
+            <input required maxlength="10" type="text" id="name" placeholder="당신의 이름을 적어주세요.">
+            <input type="submit" value="Login" />
+        </form>
 
-    <h1 id="h1" class="hidden"></h1>
+        <h1 id="h1" class="hidden"></h1>
 
-    <h2 id="clock">00:00:00</h2>
+        <h2 id="clock">00:00:00</h2>
 
-    <div id="quote">
-        <span>명언</span><br>
-        <span>작가</span>
-    </div><br>
+        <div id="quote">
+            <span>명언</span><br>
+            <span>작가</span>
+        </div><br>
 
-    <div id="weather">
-        <span>날씨</span><br>
-        <span>온도</span><br>
-        <span>지역</span>
-    </div><br>
+        <div id="weather">
+            <span>날씨</span><br>
+            <span>온도</span><br>
+            <span>지역</span>
+        </div><br>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/timer.js"></script>
-    <script src="./js/quote.js"></script>
-    <script src="./js/background.js"></script>
-    <script src="./js/weather.js"></script>
+        <!-- toDo 리스트 -->
+        <form id="frmToDo">
+            <input type="text" placeholder="할 일을 적고 엔터키를 누르세요" required>
+        </form>
 
+        <ul id="lstToDo">
+            <!-- <li>
+            <span></span>
+        </li> -->
+            <!-- <li>밥먹기</li>
+        <li>잠자기</li> -->
+        </ul>
+
+        <script src="./js/greeting.js"></script>
+        <script src="./js/timer.js"></script>
+        <script src="./js/quote.js"></script>
+        <script src="./js/background.js"></script>
+        <script src="./js/weather.js"></script>
+        <script src="./js/todo.js"></script>
+    </div>
 </body>
+
 </html>
