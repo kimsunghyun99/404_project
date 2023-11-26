@@ -48,7 +48,7 @@ function displayTodo(arg){
     span.innerText = arg.text;
 
     const button = document.createElement("button");
-    button.innerText = " bye~ 🎈";
+    button.innerText = " clear~ 🎈";
     button.addEventListener("click", deleteToDo);
 
     li.appendChild(span);

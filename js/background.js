@@ -5,17 +5,14 @@
  */
 
 const images = [
-    "0.jpeg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg",
-    "5.jpeg", "6.jpeg", "7.jpeg", "8.jpeg", "9.jpeg",
-    "10.jpeg", "11.jpeg", "12.jpeg", "13.jpeg", "14.jpeg",
-    "15.jpeg", "16.jpeg", "17.jpeg", "18.jpeg", "19.jpeg",
-    "20.jpeg", "21.jpeg", "22.jpeg", "23.jpeg", "24.jpeg",
-    "25.jpeg", "26.jpeg", "27.jpeg", "28.jpeg", "29.jpeg",
-    "30.jpeg", "31.jpeg", "32.jpeg", "33.jpeg", "34.jpeg",
-    "35.jpeg", "36.jpeg", "37.jpeg", "38.jpeg", "39.jpeg",
-    "40.jpeg", "41.jpeg", "42.jpeg", "43.jpeg", "44.jpeg",
-    "45.jpeg", "46.jpeg", "47.jpeg", "48.jpeg", "49.jpeg",
-    "50.jpeg"
+    "1.jpg", "2.jpg", "3.jpg", "4.jpg",
+    "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg",
+    "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg",
+    "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg",
+    "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg",
+    "25.jpg", "26.jpg", "27.jpg", "28.jpg", "29.jpg",
+    "30.jpg", "31.jpg", "32.jpg", "33.jpg", "34.jpg",
+    "35.jpg"
 ];
 
 const selectedImage = images[Math.floor(Math.random()*images.length)];

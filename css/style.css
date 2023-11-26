@@ -9,27 +9,79 @@ body{
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.clockWeather {
+    float: left;
+}
+
+.frmToDo {
+    float: right;
+    margin-top: 1.5%;
+}
+
+#lstToDo{
+    width: 300px;    
+}
+.frmToDo>button{
+    text-align: right;
+}
+
 li {
     list-style: square;
+    margin-top: 3px;
 }
+
+.mainCenter {
+    text-align: center; /* Center the content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin-left: 15%;
+}
+
+.greeting{
+    font-size: 55px;
+}
+#quote{font-size: 20px;}
+
 button {
-    margin-left: 10px;
+    width: 70px;
+    height: 29px;
+    margin-left: 15px;
     border-radius: 8px;
-    background: none;
-    border: solid 1px rgb(214, 193, 165);
-    color: rgb(214, 193, 165);
+    background: rgba(170, 170, 170, 0.5);
+    border: solid 1px white;
+    color: black;
     cursor: pointer;
 }
 
 body>img {
     width: 100%;
+    height: 100%;
     position: absolute;
-    z-index:-1;
+    z-index: -1;
     top: 0;
+    left: 0;
     margin: 0;
-    background-size: cover;
+    object-fit: cover;
+    position: fixed;
 }
 
 .bodyContainer {
     margin: 5%;
+}
+
+.todoList {
+    border-radius: 8px;
+    width: 300px;
+    height: 35px;
+    border: none;
+    padding-left: 18px;
 }
