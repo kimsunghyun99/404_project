@@ -15,14 +15,30 @@ html, body {
     overflow: hidden;
 }
 
+#name {
+    width: 200px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+#Login, .greeting, #name{
+    border: none;
+    border-radius: 8px;
+}
+.loginbtn{
+    width: 60px;
+    margin-left: 10px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
 .clockWeather {
     float: left;
 }
 
-
-
 #lstToDo{
-    width: 3000px;    
+    width: 300px;    
 }
 .frmToDo>button{
     text-align: right;
