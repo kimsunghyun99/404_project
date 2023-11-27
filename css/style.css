@@ -19,13 +19,10 @@ html, body {
     float: left;
 }
 
-.frmToDo {
-    float: right;
-    margin-top: 1.5%;
-}
+
 
 #lstToDo{
-    width: 300px;    
+    width: 3000px;    
 }
 .frmToDo>button{
     text-align: right;
@@ -34,6 +31,7 @@ html, body {
 li {
     list-style: square;
     margin-top: 3px;
+    margin-right: 100px;
 }
 
 .mainCenter {
@@ -78,9 +76,23 @@ body>img {
     margin: 5%;
 }
 
+
+
+.frmToDo {
+    float: right;
+    width: 330px;
+    margin-top: 1.5%;
+}
+
+.todoContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
 .todoList {
     border-radius: 8px;
-    width: 300px;
+    width: 250px;
     height: 35px;
     border: none;
     padding-left: 18px;
@@ -88,7 +100,6 @@ body>img {
 
 #toggleTodoButton {
     display: block;
-    margin-bottom: 10px; /* 간격 추가 */
     font-size: 16px; /* 폰트 크기 조절 */
     cursor: pointer;
     background: rgba(170, 170, 170, 0.7);
@@ -101,5 +112,6 @@ body>img {
     white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정 */
     text-align: left;
     height: 30px;
+    
 } 
 
