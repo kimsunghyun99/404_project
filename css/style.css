@@ -89,14 +89,17 @@ body>img {
 #toggleTodoButton {
     display: block;
     margin-bottom: 10px; /* 간격 추가 */
-    padding: 10px 20px; /* 크기 조절 */
     font-size: 16px; /* 폰트 크기 조절 */
     cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
+    background: rgba(170, 170, 170, 0.7);
+    border: solid 1px white;
+    color: black;
     border: none;
     border-radius: 5px;
     transform: rotate(0deg); /* 0도 회전으로 가로 표시 */
-    width: 150px;
+    width: 40px;
     white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정 */
+    text-align: left;
+    height: 30px;
 } 
+
