@@ -12,6 +12,9 @@ const h1 = document.getElementById("h1");
 // className 상수화
 const CLASS_HIDDEN = "hidden";
 const KEY_USERNAME = "userName";
+const logout = document.querySelector("#logout-button");
+const login = document.querySelector("#login-button");
+
 
 function clickLogin(event){
     event.preventDefault();
@@ -22,9 +25,26 @@ function clickLogin(event){
     localStorage.setItem(KEY_USERNAME,userName);
     //h1은 보여주고
     displayGreeting(userName);
-
-    
 }
+
+
+login.addEventListener("click", (e) => {
+    h1.classList.remove(CLASS_HIDDEN);   // 안녕 나오는거 뜨게함
+    login.classList.add(CLASS_HIDDEN);   // 로그인 버튼 나오는거 없앰
+   logout.classList.remove(CLASS_HIDDEN);
+
+});
+
+logout.addEventListener("click", (e) => {
+    logout.classList.add(CLASS_HIDDEN);    // 로그아웃 버튼 숨김
+    h1.classList.add(CLASS_HIDDEN);   // 안녕 나오는거 숨김
+    localStorage.clear();                // 로컬 스토리지 삭제
+    frmLogin.classList.remove(CLASS_HIDDEN); 
+    inputLogin.value ="";
+    login.classList.remove(CLASS_HIDDEN); 
+  });
+  
+
 
 // 인사를 출력하는 함수
 // @param {*} argName
@@ -43,6 +63,7 @@ if(lsUserName === null){
 } else {
     frmLogin.classList.add(CLASS_HIDDEN);
     displayGreeting(lsUserName);
+    //showLogoutForm();
 }
 
 frmLogin.addEventListener("submit", clickLogin);

@@ -11,10 +11,7 @@
 
 <body>
     <div class="bodyContainer">
-        <form id="Login">
-            <input required maxlength="10" type="text" id="name" placeholder="당신의 이름을 적어주세요.">
-            <input type="submit" value="Login" />
-        </form>
+        
 
 
         <!-- 시계 -->
@@ -44,8 +41,20 @@
         <!-- 아이디 출력 -->
         <div class="mainCenter">
         <h1 class="greeting" id="h1" class="hidden"></h1>
-        <button style="border: none; background: none;"><img style="width: 25px; height: 25px;" src="./img/cat-7287671_1280.jpg"></button>
+        
 
+
+        
+        <div class="mainCenter">
+            
+        <h1 class="greeting" id="h1" class="hidden"></h1>
+        <form id="Login">
+            <input required maxlength="10" type="text" id="name" placeholder="당신의 이름을 적어주세요.">
+            <input type="submit" value="LOGIN" id="login-button"/>
+        </form>
+        <br>
+        <button id="logout-button">LOGOUT</button>
+        <br>
         <!-- 명언 -->
         <div id="quote">
             <span>명언</span><br>
