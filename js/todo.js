@@ -85,3 +85,18 @@ if(savedTodos !== null){
     // })
 
 }
+
+const toggleTodoButton = document.getElementById("toggleTodoButton");
+
+function toggleTodoList() {
+    if (frmToDo.style.display === "none") {
+        frmToDo.style.display = "block"; // 표시
+        lstToDo.style.display = "block"; // 표시
+    } else {
+        frmToDo.style.display = "none"; // 숨기기
+        lstToDo.style.display = "none"; // 숨기기
+    }
+}
+
+// 숨기기/표시 버튼에 클릭 이벤트 리스너 추가
+toggleTodoButton.addEventListener("click", toggleTodoList); 
